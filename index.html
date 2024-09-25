@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Markus' bikes</h1>
+            
+            <div id="visualizer">
+                <div>
+                    <div class="visualizer-title visualizer-frame_type" data-visualizer-name="frame_type">
+                        <h4>Frame Type</h4>
+                        <div class="visualizer-container">
+                            <p data-visualizer-title="frame_type">
+                                <span>---</span>
+                            </p>
+                            <div class="visualizer-price visualizer-price-item"></div>
+                        </div>
+                    </div>
+                    <div class="visualizer-title visualizer-frame_finish" data-visualizer-name="frame_finish">
+                        <h4>Frame Finish</h4>
+                        <div class="visualizer-container">
+                            <p data-visualizer-title="frame_finish">
+                                <span>---</span>
+                            </p>
+                            <div class="visualizer-price visualizer-price-item"></div>
+                        </div>
+                    </div>
+                    <div class="visualizer-title visualizer-wheels" data-visualizer-name="wheels">
+                        <h4>Wheels</h4>
+                        <div class="visualizer-container">
+                            <p data-visualizer-title="wheels">
+                                <span>---</span>
+                            </p>
+                            <div class="visualizer-price visualizer-price-item"></div>
+                        </div>
+                    </div>
+                    <div class="visualizer-title visualizer-rim" data-visualizer-name="rim">
+                        <h4>Rim</h4>
+                        <div class="visualizer-container">
+                            <p data-visualizer-title="rim">
+                                <span>---</span>
+                            </p>
+                            <div class="visualizer-price visualizer-price-item"></div>
+                        </div>
+                    </div>
+                    <div class="visualizer-title visualizer-chain" data-visualizer-name="chain">
+                        <h4>Chain</h4>
+                        <div class="visualizer-container">
+                            <p data-visualizer-title="chain">
+                                <span>---</span>
+                            </p>
+                            <div class="visualizer-price visualizer-price-item"></div>
+                        </div>
+                    </div>
+
+                    <div class="visualizer-title visualizer-total" data-visualizer-name="total">
+                        <div class="visualizer-container">
+                            <p data-visualizer-title="total-price">TOTAL PRICE</p>
+                            <div class="visualizer-price visualizer-price-total"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floating-product">
+                <img id="floating-product">
+            </div>
+
+            <div id="configurator">
+                <button class="accordion" data-element-title="frame_type">Frame type</button>
+                <div class="panel" data-image-path="frame_type">
+                    <p class="element" data-element-image="true" data-element-name="full-suspension" data-element-blocks="road,fat_bike" data-element-price="130">Full-suspension</p>
+                    <p class="element" data-element-image="true" data-element-name="diamond" data-element-blocks="mountain">Diamond</p>
+                    <p class="element" data-element-image="true" data-element-name="step-through" data-element-blocks="mountain">Step-through</p>
+                </div>
+
+                <button class="accordion" data-element-title="frame_finish">Frame Finish</button>
+                <div class="panel">
+                    <p class="element" data-element-name="matte">Matte</p>
+                    <p class="element" data-element-name="shiny">Shiny</p>
+                </div>
+
+                <button class="accordion" data-element-title="wheels">Wheels</button>
+                <div class="panel" data-image-path="wheels">
+                    <p class="element" data-element-image="true" data-element-name="road" data-element-price="80">Road</p>
+                    <p class="element" data-element-image="true" data-element-name="mountain">Mountain</p>
+                    <p class="element" data-element-image="true" data-element-name="fat_bike" data-element-blocks="red">Fat bike</p>
+                </div>
+
+                <button class="accordion" data-element-title="rim">Rim Color</button>
+                <div class="panel" data-element-title="rim">
+                    <div class="element color-container" data-element-name="red">
+                        <div class="color-circle" data-color="red"></div>
+                        <span>Red</span>
+                    </div>
+                    <div class="element color-container" data-element-name="black">
+                        <div class="color-circle" data-color="black"></div>
+                        <span>Black</span>
+                    </div>
+                    <div class="element color-container" data-element-name="blue" data-element-price="20">
+                        <div class="color-circle" data-color="blue"></div>
+                        <span>Blue</span>
+                    </div>
+                </div>
+
+                <button class="accordion" data-element-title="chain">Chain</button>
+                <div class="panel" data-image-path="chain">
+                    <p class="element" data-element-image="true" data-element-name="single-speed" data-element-price="43">Single-speed</p>
+                    <p class="element" data-element-image="true" data-element-name="8-speed">8-speed</p>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+
+
+        </script>
+    </body>
+    
+    <script src="constants.js"></script>
+    <script src="events.js"></script>
+    <script src="configurator.js"></script>
+    <script src="visualizer.js"></script>
+    <script src="prices.js"></script>
+
+
+    <script src="utils.js"></script>
+    <script src="network.js"></script>
+    <script src="main.js"></script>
+</html>

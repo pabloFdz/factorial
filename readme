@@ -1,0 +1,17 @@
+This is a frontend solution/simulation where we assume that
+ - All the info and data of the products are received from a server
+ - The data is manipulated after that
+ - The HTML is build using this data
+ - The page is rendered dynamically. From the backend, or using components with JS
+
+
+Answers to possible questions, clarifications, etc:
+Classes could be used to define and manipulate objects and their data as that would make things easier
+
+The items/products could be set as radio buttons (we should make sure that it will always work on that way)
+
+All the images should have the same size to avoid weird/unexpected behaviors
+Also, they could be lazy loaded while being hidden before the user interacts
+
+jQuery is being used for DOM manipulation
+As jQuery is used, the attributes "data-..." in the HTML are used just for a clearer syntax
